@@ -1,17 +1,10 @@
 {
     "version": 2,
+    "name": "chat application",
     "builds": [
-      {
-        "src": "./index.js",
-        "use": "@vercel/node"
-      }
+       { "src": "index.js", "use": "@vercel/node" }
     ],
     "routes": [
-      {
-        
-        "src": "/(.*)",
-       
-        "dest": "/"
-      }
+       { "src": "/(.*)", "dest": "/index.js" }
     ]
-  }
+ }
